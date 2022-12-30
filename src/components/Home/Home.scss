@@ -1,0 +1,173 @@
+.home-container {
+  margin-left: 100px;
+  margin-top: 150px;
+
+  .text-container {
+    width: 650px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    float: left;
+    width: 66%;
+
+    .welcome {
+      position: relative;
+      width: 290px;
+      font-size: 32px;
+      font-weight: 500;
+      padding: 10px;
+      border: 0.5px solid #fff;
+      &:hover {
+        animation: swing;
+        animation-duration: 0.7s;
+      }
+    }
+    .hi {
+      position: relative;
+      font-size: 64px;
+      font-weight: 700;
+      width: 630px;
+      border-right: 1px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+
+      @keyframes typing {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 630px;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #fff;
+        }
+      }
+    }
+    .intro {
+      position: relative;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 300;
+      opacity: 0%;
+      animation: appear;
+      animation-delay: 3s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .contact-link {
+      position: absolute;
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+      width: 200px;
+      opacity: 0%;
+      animation: appear;
+      animation-delay: 3s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+
+      .right-arrow {
+        margin-left: 10px;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0%;
+      }
+      to {
+        opacity: 100%;
+      }
+    }
+  }
+
+  .earth-container {
+    float: left;
+    width: 20%;
+    opacity: 0%;
+    animation: appear;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    @keyframes appear {
+      from {
+        opacity: 0%;
+      }
+      to {
+        opacity: 100%;
+      }
+    }
+
+    .earth {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 3em auto;
+
+      transition: transform 800ms linear;
+      animation: rotate 60s linear infinite;
+
+      color: #000;
+      border-radius: 50%;
+      border: 1px solid #000;
+      background: url('../../assets/images/animated-earth.png') 0 0 repeat /
+        630px;
+
+      transform-style: preserve-3d;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        content: '';
+        border-radius: 50%;
+        box-shadow: -30px 15px 50px 10px rgba(0, 0, 0, 0.9) inset;
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: 0.2;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 100px 100px,
+          rgb(160, 160, 160),
+          rgb(0, 0, 0)
+        );
+      }
+
+      &:hover {
+        animation-play-state: paused;
+        transform: scale(1.1);
+      }
+
+      @keyframes rotate {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 630px 0;
+        }
+      }
+    }
+  }
+}

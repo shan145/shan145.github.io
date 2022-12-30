@@ -1,0 +1,104 @@
+.contact-form {
+  margin-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .modal {
+    background-color: #202020;
+    color: #fff;
+    width: 50%;
+  }
+
+  .loading {
+    font-size: 30px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 48px;
+    animation: fadeInDown 1s;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 1s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #202020;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #202020;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 200px;
+    box-sizing: border-box;
+  }
+
+  .flat-button {
+    color: #fff;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #fff;
+    float: right;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eee;
+      border-color: #eee;
+      color: #000;
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
