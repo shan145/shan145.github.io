@@ -15,6 +15,13 @@
       width: 400px;
       height: 400px;
     }
+
+    @media screen and (max-width: 1200px) {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
   }
 
   .text-container {
@@ -37,6 +44,41 @@
       font-weight: 300;
       width: 90%;
       animation: fadeInUp 1s;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-container {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .text-container {
+      width: 80%;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .title {
+        font-size: 32px;
+        text-align: center;
+        margin-right: 30px;
+      }
+
+      .info {
+        font-size: 15px;
+      }
+    }
+    .img-container {
+      width: 100%;
+      animation: fadeInDown 1s;
+      animation-fill-mode: forwards;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }

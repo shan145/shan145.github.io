@@ -6,16 +6,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  .modal {
-    background-color: #202020;
-    color: #fff;
-    width: 50%;
-  }
-
-  .loading {
-    font-size: 30px;
-  }
-
   .title {
     margin-bottom: 30px;
     font-weight: 700;
@@ -99,6 +89,17 @@
       cursor: pointer;
       background-color: #fff;
       color: #000;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+
+    .title {
+      font-size: 32px;
+      text-align: center;
     }
   }
 }

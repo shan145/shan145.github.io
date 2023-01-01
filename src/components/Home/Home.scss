@@ -3,7 +3,6 @@
   margin-top: 150px;
 
   .text-container {
-    width: 650px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     float: left;
@@ -91,6 +90,43 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    .text-container {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+      .welcome {
+        font-size: 20px;
+        width: 185px;
+      }
+
+      .hi {
+        font-size: 40px;
+        width: 395px;
+      }
+
+      .intro {
+        font-size: 16px;
+        width: 350px;
+      }
+
+      .contact-link {
+        font-size: 16px;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 395px;
+        }
+      }
+    }
+  }
+
   .earth-container {
     float: left;
     width: 20%;
@@ -125,7 +161,6 @@
         630px;
 
       transform-style: preserve-3d;
-
       &:after {
         position: absolute;
         top: 0;
@@ -167,6 +202,13 @@
         100% {
           background-position: 630px 0;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .earth-container {
+      .earth {
+        display: none;
       }
     }
   }
