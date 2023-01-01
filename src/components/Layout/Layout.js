@@ -24,8 +24,11 @@ const Layout = () => {
         init={particlesInit}
         loaded={particlesLoaded}
       />
-      <Navbar />
-      <Outlet />
+      <div className="container">
+        <Navbar />
+        <Outlet />
+      </div>
+
       <Footer />
     </div>
   )
