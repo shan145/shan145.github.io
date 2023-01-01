@@ -6,7 +6,7 @@
   .img-container {
     width: 40%;
     opacity: 0;
-    animation: fadeIn 1s 1s;
+    animation: fadeInDown 1s;
     animation-fill-mode: forwards;
     img {
       display: inline-block;
@@ -72,8 +72,6 @@
     }
     .img-container {
       width: 100%;
-      animation: fadeInDown 1s;
-      animation-fill-mode: forwards;
       img {
         display: block;
         margin-left: auto;
