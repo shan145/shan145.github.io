@@ -28,17 +28,13 @@
   }
 
   .stage-cube-container {
+    height: 400px;
     width: 50%;
-    height: 90%;
-    padding-top: 10%;
-    margin-left: 0;
-    right: 0;
-    top: 15%;
+    padding-top: 8%;
     opacity: 0;
     animation: fadeIn 1s 1s;
     animation-fill-mode: forwards;
     overflow: hidden;
-    position: absolute;
   }
 
   .cubespinner {
@@ -47,7 +43,7 @@
     animation-iteration-count: infinite;
     animation-duration: 12s;
     transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
+    transform-origin: 100px 100px 0px;
     margin-left: calc(50% - 100px);
 
     div {
@@ -106,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .work-container {
     flex-direction: column;
     align-items: center;
@@ -130,12 +126,9 @@
         margin-right: auto;
       }
     }
-  }
-
-  .stage-cube-container {
-    width: 0;
-  }
-  .cubespinner {
-    display: none;
+    .stage-cube-container {
+      width: 80%;
+      padding-top: 100px;
+    }
   }
 }

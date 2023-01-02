@@ -97,5 +97,13 @@
   .navbar {
     padding-left: 0px;
     padding-right: 10px;
+
+    .logo-link {
+      transform: scale(0.7);
+      transition: none;
+      &:hover {
+        transform: scale(0.7);
+      }
+    }
   }
 }
