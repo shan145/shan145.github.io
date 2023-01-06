@@ -157,8 +157,8 @@
       color: #000;
       border-radius: 50%;
       border: 1px solid #000;
-      background: url('../../assets/images/animated-earth.png') 0 0 repeat /
-        630px;
+      background: url('../../assets/images/animated-earth.png') 0 0 repeat;
+      background-size: 630px;
 
       transform-style: preserve-3d;
       &:after {
